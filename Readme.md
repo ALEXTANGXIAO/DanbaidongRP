@@ -90,32 +90,8 @@ CustomEditor "UnityEditor.DanbaidongGUI.DanbaidongGUI"`
 ![GPULights](ReadmeAssets~/202409014.png)
 
 # Others
+<br>
 
-<div style="display: flex;">
-  <div style="flex: 1; padding: 1px;">
-
-#### Sponsor me
-
-If you find this project useful or would like to support my ongoing development and maintenance efforts, i would greatly appreciate your sponsorship! Your contributions directly help us improve and sustain the project.
-
-🔧 Developing new features
-
-🛠️ Enhancing and fixing existing functionality
-
-📚 Documenting and maintaining resources
-
-🚀 Boosting performance and stability
-
-</div>
-
-<div style="flex: 1; padding: 1px;">
-
-#### How to Sponsor
-
-You can sponsor me via:
-
-<img src="ReadmeAssets~/202501181.png" alt="Alipay" style="width: auto; height: 350px;">
-
-</div>
-</div>
-
+| Sponsor me | How to Sponsor |
+| :------------------------------------------ | :--------------- |
+| If you find this project useful or would like to support my ongoing development and maintenance efforts,i would greatly appreciate your sponsorship! <br> Your contributions directly help us improve and sustain the project. <br><br><br><br><br> 🔧 Developing new features  <br> 🛠️ Enhancing and fixing existing functionality <br> 📚 Documenting and maintaining resources <br> 🚀 Boosting performance and stability | <img src="ReadmeAssets~/202501181.png" alt="Alipay" style="width: 50%; height: auto;">|
