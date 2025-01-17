@@ -383,8 +383,9 @@ namespace UnityEngine.Rendering.Universal.Internal
         {
             m_GPULightsDataBuildSystem = gpuLightsDataBuildSystem;
 
-            int width = cameraData.camera.pixelWidth;
-            int height = cameraData.camera.pixelHeight;
+            var desc = cameraData.cameraTargetDescriptor;
+            int width = desc.width;
+            int height = desc.height;
 
             var temp = new Matrix4x4();
             temp.SetRow(0, new Vector4(0.5f * width, 0.0f, 0.0f, 0.5f * width));
