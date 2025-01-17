@@ -40,6 +40,7 @@ Roadmap & Features:
 - [ ] Idol Live アイドル!!!!!
 
 # Usage
+
 * Create a new Unity 6 URP project <span style="color: #FF8C00;">(6000.0.30f1)</span>.
 * *Window -> Package Manager*, remove *Universal RP* and delete the contents of the *Assets/Settings* folder.
 * Add *DanbaidongRP* through the *Package Manager*. It is recommended to use the "Install package from disk..." option to individually add the [Core](https://github.com/danbaidong1111/DanbaidongRPCore), [Config](https://github.com/danbaidong1111/DanbaidongRPConfig), and [DanbaidongRP](https://github.com/danbaidong1111/DanbaidongRP) packages (select the `package.json` file for each).
@@ -87,4 +88,34 @@ CustomEditor "UnityEditor.DanbaidongGUI.DanbaidongGUI"`
 # GPU Lights (Cluster)
 
 ![GPULights](ReadmeAssets~/202409014.png)
+
+# Others
+
+<div style="display: flex;">
+  <div style="flex: 1; padding: 1px;">
+
+#### Sponsor me
+
+If you find this project useful or would like to support my ongoing development and maintenance efforts, i would greatly appreciate your sponsorship! Your contributions directly help us improve and sustain the project.
+
+🔧 Developing new features
+
+🛠️ Enhancing and fixing existing functionality
+
+📚 Documenting and maintaining resources
+
+🚀 Boosting performance and stability
+
+</div>
+
+<div style="flex: 1; padding: 1px;">
+
+#### How to Sponsor
+
+You can sponsor me via:
+
+<img src="ReadmeAssets~/202501181.png" alt="Alipay" style="width: auto; height: 350px;">
+
+</div>
+</div>
 
