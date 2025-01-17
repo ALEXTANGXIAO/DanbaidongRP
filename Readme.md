@@ -3,6 +3,15 @@
 <img src="https://img.shields.io/github/last-commit/danbaidong1111/DanbaidongRP" alt="last-commit" />
 <img src="https://img.shields.io/badge/Author-Danbaidong-pink"/>
 
+<a href="https://www.zhihu.com/people/danbaidong1111" target="_blank">
+  <img src="https://img.shields.io/badge/Zhihu-%E8%9B%8B%E7%99%BD%E8%83%A8-gray?style=flat&logo=zhihu&logoSize=auto&labelColor=white&link=https%3A%2F%2Fwww.zhihu.com%2Fpeople%2Fdanbaidong1111"/>
+</a>
+
+<a href="https://space.bilibili.com/39694821" target="_blank">
+  <img src="https://img.shields.io/badge/bilibili-%E5%AF%8C%E5%90%AB%E8%8A%9D%E5%A3%AB%E7%9A%84%E8%9B%8B%E7%99%BD%E8%83%A8-gray?style=flat&logo=bilibili&logoColor=white&logoSize=auto&labelColor=%23FF69B4&link=https%3A%2F%2Fspace.bilibili.com%2F39694821"/>
+</a>
+
+
 # **Danbaidong Render Pipeline**
 
 ## Announcement
@@ -14,6 +23,7 @@ Just add something I need.
 </div>
 
 Subscribe:
+
 
 * https://space.bilibili.com/39694821
 * https://www.zhihu.com/people/danbaidong1111
@@ -90,8 +100,33 @@ CustomEditor "UnityEditor.DanbaidongGUI.DanbaidongGUI"`
 ![GPULights](ReadmeAssets~/202409014.png)
 
 # Others
-<br>
+<br/>
+<table><tr><td valign="top" width="50%">
+<div align="center" valign="top">
+  
+  **Sponsor me**
+  
+<div/> 
 
-| Sponsor me | How to Sponsor |
-| :------------------------------------------ | :--------------- |
-| If you find this project useful or would like to support my ongoing development and maintenance efforts,i would greatly appreciate your sponsorship! <br> Your contributions directly help us improve and sustain the project. <br><br><br><br><br> 🔧 Developing new features  <br> 🛠️ Enhancing and fixing existing functionality <br> 📚 Documenting and maintaining resources <br> 🚀 Boosting performance and stability | <img src="ReadmeAssets~/202501181.png" alt="Alipay" style="width: 50%; height: auto;">|
+<div align="left"> 
+If you find this project useful or would like to support my ongoing development and maintenance efforts,i would greatly appreciate your sponsorship! Your contributions directly help us improve and sustain the project. 
+
+* 🔧 Developing new features 
+* 🛠️ Enhancing and fixing existing functionality
+* 📚 Documenting and maintaining resources 
+* 🚀 Boosting performance and stability
+<div/> 
+
+</td><td valign="top" width="50%">
+
+<div align="center" valign="top">
+  
+  **How to Sponsor**
+  
+<div/> 
+  
+<div align="center"> 
+
+<img src="ReadmeAssets~/202501181.png" alt="Alipay" style="width: 50%; height: auto;">
+<div/> 
+</td></tr></table>  
