@@ -143,8 +143,8 @@ Shader "DanbaidongRP/Helpers/Outline"
                 float4 scaledScreenParams = GetScaledScreenParams();
                 float ScaleX = abs(scaledScreenParams.x / scaledScreenParams.y);
 
-                o.positionHCS = TransformObjectToHClip(v.vertex);
-                o.positionWS = TransformObjectToWorld(v.vertex);
+                o.positionHCS = TransformObjectToHClip(v.vertex.xyz);
+                o.positionWS = TransformObjectToWorld(v.vertex.xyz);
 
                 float3 tangentOS = v.tangent.xyz;
                 float3 normalOS = v.normal.xyz;
@@ -163,7 +163,7 @@ Shader "DanbaidongRP/Helpers/Outline"
 
                 o.normalWS = TransformObjectToWorldNormal(normalOS);
                 float3 normalCS = TransformWorldToHClipDir(o.normalWS);
-                float2 extend = normalize(normalCS) * (_OutlineWidth*0.01); 
+                float2 extend = normalize(normalCS).xy * (_OutlineWidth * 0.01);
                 extend.x /= ScaleX;
 
 
@@ -182,7 +182,7 @@ Shader "DanbaidongRP/Helpers/Outline"
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 
                 // Alpha Clip
-                float4 mainTexColor = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap,i.uv);
+                float4 mainTexColor = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, i.uv.xy);
             #if _USE_ALPHA_CLIPPING
                 clip(mainTexColor.a - _AlphaClip);
             #endif
@@ -190,8 +190,7 @@ Shader "DanbaidongRP/Helpers/Outline"
                 // Input
                 float  depth = i.positionHCS.z;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
 
                 // Property prepare
                 float3 normalWS = SafeNormalize(i.normalWS);

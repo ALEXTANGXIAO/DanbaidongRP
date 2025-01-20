@@ -326,8 +326,7 @@ Shader "DanbaidongRP/PBRToon/Face"
                 float2 UV = i.uv.xy;
                 float2 UV1 = i.uv.zw;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
 
                 // FaceLightMap
                 float2 faceLightMapUV = UV1;

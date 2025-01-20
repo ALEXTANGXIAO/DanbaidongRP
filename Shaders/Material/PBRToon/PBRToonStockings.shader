@@ -306,8 +306,7 @@ Shader "DanbaidongRP/PBRToon/Stockings"
                 float  depth = i.positionHCS.z;
                 float2 UV = i.uv.xy;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
 
                 // Tex Sample
                 float4 mainTex = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, UV);

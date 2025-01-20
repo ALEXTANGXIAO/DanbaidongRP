@@ -309,8 +309,7 @@ Shader "DanbaidongRP/PBRToon/Transparent"
                 float2 UV = i.uv.xy;
                 float2 UV1 = i.uv.zw;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
 
                 // Tex Sample
                 float4 mainTex = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, UV);
@@ -735,8 +734,7 @@ Shader "DanbaidongRP/PBRToon/Transparent"
                 float2 UV = i.uv.xy;
                 float2 UV1 = i.uv.zw;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
 
                 // Tex Sample
                 float4 mainTex = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, UV);

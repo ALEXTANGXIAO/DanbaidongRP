@@ -156,8 +156,8 @@ namespace UnityEngine.Rendering.Universal.Internal
                 passData.cs = m_GPUCopy;
                 passData.kernel1Step = m_SampleKernel_xyzw2x_1;
                 passData.kernel8Step = m_SampleKernel_xyzw2x_8;
-                passData.width = cameraData.pixelWidth;
-                passData.height = cameraData.pixelHeight;
+                passData.width = cameraData.scaledWidth;
+                passData.height = cameraData.scaledHeight;
 
                 builder.UseTexture(source, AccessFlags.Read);
                 builder.UseTexture(destination, AccessFlags.Write);

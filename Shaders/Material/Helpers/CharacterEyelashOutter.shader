@@ -266,8 +266,7 @@ Shader "DanbaidongRP/Helpers/CharacterEyelashOutter"
                 float  linearDepth = LinearEyeDepth(depth, _ZBufferParams);
                 float2 UV = i.uv.xy;
                 float3 positionWS = i.positionWS;
-                float2 screenUV = i.positionHCS.xy / _ScreenParams.xy;
-                TransformScreenUV(screenUV);
+                float2 screenUV = GetNormalizedScreenSpaceUV(i.positionHCS.xy);
                 float alpha = _AlphaOutter;
 
                 // Clip & Depth Test

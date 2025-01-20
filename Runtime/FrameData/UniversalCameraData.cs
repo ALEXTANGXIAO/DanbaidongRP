@@ -212,7 +212,15 @@ namespace UnityEngine.Rendering.Universal
         internal bool useScreenCoordOverride;
         internal Vector4 screenSizeOverride;
         internal Vector4 screenCoordScaleBias;
+
+        /// <summary>
+        /// Returns the non-scaled width of the Camera.
+        /// </summary>
         internal int pixelWidth;
+
+        /// <summary>
+        /// Returns the non-scaled height of the Camera.
+        /// </summary>
         internal int pixelHeight;
         internal float aspectRatio;
 

@@ -67,7 +67,7 @@ Shader "DanbaidongRP/PBRToon/EyeBlend"
             v2f vert (appdata v)
             {
                 v2f o;
-                o.vertex = TransformObjectToHClip(v.vertex);
+                o.vertex = TransformObjectToHClip(v.vertex.xyz);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex);
 
                 return o;
